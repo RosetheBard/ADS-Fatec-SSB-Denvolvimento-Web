@@ -32,9 +32,11 @@
 
     // echo date("D/M/Y - h:i:s");
 
-    if(isset($_POST['enviar'])){
-        echo $_POST['email'];
+    // if(isset($_POST['enviar'])){
+    //     echo $_POST['email'];
         
-        echo sha1($_POST['senha']);
-    }
+    //     echo sha1($_POST['senha']);
+    // }
+
+    
 ?>
