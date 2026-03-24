@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="" method="post">
+    <form action="" method="get">
         email
         <input type="email" name="email" id="">
         senha
@@ -21,22 +21,32 @@
 
 <?php
 
-    // $palavrao = array(
-    //     'merda',
-    //     'bosta',
-    //     'pau'
-    // );
-    // $frase = "empresa paulista";
+define("HOST", "localhost");
+define("USUARIO", "root");
+define("SENHA", "");
+define("BANCO", "rosemarry1");
 
-    // echo str_replace($palavrao, "***", $frase);
+$mysqli = new mysqli(HOST, USUARIO, SENHA, BANCO);
 
-    // echo date("D/M/Y - h:i:s");
+if(!$mysqli->connect_errno){
+    echo "ok";
+}
+// $palavrao = array(
+//     'merda',
+//     'bosta',
+//     'pau'
+// );
+// $frase = "empresa paulista";
 
-    // if(isset($_POST['enviar'])){
-    //     echo $_POST['email'];
-        
-    //     echo sha1($_POST['senha']);
-    // }
+// echo str_replace($palavrao, "***", $frase);
 
-    
+// echo date("D/M/Y - h:i:s");
+
+// if(isset($_POST['enviar'])){
+//     echo $_POST['email'];
+
+//     echo sha1($_POST['senha']);
+// }
+
+
 ?>
