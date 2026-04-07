@@ -7,13 +7,11 @@
 </head>
 <body>
     <form action="" method="post">
-        <form action="" method="get">
         email
         <input type="email" name="email" id="">
         senha
         <input type="text" name="senha" id="">
-        <input type="submit" value="Enviar" name="enviar">
-    </form>
+        <input type="submit" value="login" name="enviar">
     </form>
 </body>
 </html>
@@ -31,7 +29,7 @@ if(isset($_POST['enviar'])){
    $email = $_POST['email'];
    $senha = $_POST['senha'];
 
-   $query = "SELECT * FROM usuarios WHERE email == '$email' AND senha == '$senha'"; 
+   $query = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'"; 
    $puxa = $mysqli->query($query);
 
    if($puxa->num_rows == 1){
@@ -39,9 +37,9 @@ if(isset($_POST['enviar'])){
         $_SESSION['email'] = $email;
         $_SESSION['senha'] = $senha;
         header("location:index3.php");
-   }
-}else{
+   }else{
     echo "dados errados";
+    }
 }
 
 ?>

@@ -16,5 +16,5 @@ $query = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
 $puxa = $mysqli->query($query);
 $mostra = $puxa->fetch_object();
 
-echo "olá" . $mostra->nome;
+echo "olá" ; //$mostra->nome;
 ?>
