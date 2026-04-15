@@ -1,0 +1,35 @@
+.cabecalho {
+    background-color: palevioletred;
+    height: -moz-fit-content;
+  height: fit-content;
+  padding: 15px 25px;
+}
+
+.corpo{
+     padding: 20px 30px;
+     height: 200vh;
+     background-image: url("../img/pfbanner.jpg");
+     background-repeat: no-repeat;
+}
+
+.footer{
+    background-color:palevioletred;
+    padding: 20px 50px;
+    height: fit-content;
+}
+
+.i-sm {
+  height: 50px;
+}
+
+.i-bn {
+    height: 450px;
+}
+
+.mn-hv {
+    float: right;
+}
+
+.mn-head {
+  float: left;
+}
