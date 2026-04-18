@@ -1,57 +1,71 @@
 /* classes de estruturação principal */
 
 .cabecalho {
-    background-color: palevioletred;
-    height: -moz-fit-content;
-    height: fit-content;
-    padding: 15px 25px;
+	background-color: palevioletred;
+	height: -moz-fit-content;
+	height: fit-content;
+	padding: 15px 25px;
 }
 
-.corpo{
-    padding: 0 60px;
-    height: fit-content;
-    background-image: url("../img/pfbanner.jpg");
-    background-attachment: fixed;
-
+.corpo {
+	padding: 0 60px;
+	height: fit-content;
+	background-image: url("../img/pfbanner.jpg");
+	background-attachment: fixed;
 }
 
-.footer{
-    background-color:palevioletred;
-    padding: 20px 50px;
-    height: fit-content;
+.footer {
+	background-color: palevioletred;
+	padding: 20px 50px;
+	height: fit-content;
 }
 
 /* classes de imagem */
 
 .i-sm {
-    height: 50px;
+	height: 50px;
 }
 
 .i-bn {
-    width: 65vw;
+	width: 40vw;
+}
+
+.i-cr {
+	width: 40vw;
 }
 
 /* classes de centralização de imagens */
 .mn-hv {
-    float: right;
+	float: right;
 }
 
 .mn-head {
-    float: left;
+	float: left;
 }
 
 /* color boxes */
 
 .bx-pink {
-  background-color: pink;
-  padding: 5vw 10vw 10vw 10vw;
+	background-color: pink;
+	padding: 5vw 10vw 10vw 10vw;
+	height: fit-content;
 }
 
 /* versão em telas pequenas */
 
 @media (max-width: 700px) {
-  .mn-head { padding: 0 0 0 45vw; }
+	.mn-head {
+		padding: 0 0 0 45vw;
+	}
 
-  .bx-pink{ padding: 2vw 8vw 2vw 4vw;}
+	.bx-pink {
+		padding: 2vw 8vw 2vw 4vw;
+	}
+
+	.i-cr {
+		width: 55vw;
+	}
+	.i-bn {
+		width: 55vw;
+	}
 }
-

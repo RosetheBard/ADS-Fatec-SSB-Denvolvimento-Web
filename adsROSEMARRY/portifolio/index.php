@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/lua.png" type="img/lua.png">
-    <meta name="description" content="esse é um website de portifolio, com o intuito de divulgar meus trabalhos e estudos">
+    <meta name="description"
+        content="esse é um website de portifolio, com o intuito de divulgar meus trabalhos e estudos">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -15,8 +16,21 @@
 <body class="conteiner">
     <header class="row">
         <div class="col-12 cabecalho">
-            <img src="img/lua.png" class="i-sm mn-head" alt="logo do portifolio">
-            <img src="img/pfbanner.jpg" class="i-sm mn-hv" alt="menu expansivo">
+            <p>
+                <img src="img/lua.png" class="i-sm mn-head" alt="logo do portifolio">
+                <button class="mn-hv" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <img src="img/pfbanner.jpg" class="i-sm" alt="menu expansivo">
+                </button>
+            </p>
+
+
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                </div>
+            </div>
         </div>
     </header>
 
@@ -27,35 +41,40 @@
                 <!-- corpo do portifólio -->
                 <h1 class="text-center">Seja Bem vindo</h1>
 
-                <img src="img/pfbanner.jpg" class="i-bn" alt="banner do portifólio">
+                <img src="img/pfbanner.jpg" class="i-bn mx-auto d-block" alt="banner do portifólio">
 
+                <!-- sessão de ultimos projetos -->
                 <section>
-                    <!-- sessão de ultimos projetos -->
-
                     <h2 class="text-center">Ultimos Projetos</h2>
 
-                    <div id="ultimos-projetos" class="carousel slide">
+                    <div id="ultimos-projetos" class="carousel slide text-center">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <a href="#"><img src="img/pfbanner-2.jpg" class="d-block w-100" alt="..."></a>
+                                <a href="#"><img src="img/pfbanner-2.jpg" class="mx-auto d-block i-cr img-fluid"
+                                        alt="..."></a>
                             </div>
                             <div class="carousel-item">
-                                <a href="#"><img src="img/pfbanner-2.jpg" class="d-block w-100" alt="..."></a>
+                                <a href="#"><img src="img/pfbanner-2.jpg" class="mx-auto d-block i-cr img-fluid"
+                                        alt="..."></a>
                             </div>
                             <div class="carousel-item">
-                                <a href="#"><img src="img/pfbanner-2.jpg" class="d-block w-100" alt="..."></a>
+                                <a href="#"><img src="img/pfbanner-2.jpg" class="mx-auto d-block i-cr img-fluid"
+                                        alt="..."></a>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#ultimos-projetos" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#ultimos-projetos"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#ultimos-projetos" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#ultimos-projetos"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
                 </section>
+
 
                 <!--  -->
 
