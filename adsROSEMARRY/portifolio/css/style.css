@@ -7,8 +7,9 @@ header {
 }
 
 main {
-	padding: 0 60px;
-	height: 90vh;
+	padding: 10px;
+	height: fit-content;
+	min-height: 95vh;
 	background-color: #f2e7d2;
 	background-attachment: fixed;
 }
@@ -22,7 +23,7 @@ footer {
 /* classes de imagem */
 
 .i-sm {
-	height: 50px;
+	height: 70px;
 }
 
 /* classes de centralização de imagens */
@@ -47,6 +48,10 @@ footer {
 	height: fit-content;
 }
 
+.bc {
+	background-color: #f2e7d2;
+}
+
 /* fontes */
 
 .playwrite-gb-j {
@@ -60,25 +65,9 @@ footer {
 
 /* versão em telas pequenas */
 
-@media (max-width: 700px) {
-	.float-l {
-		padding: 0 0 0 45vw;
-	}
-
-	.float-l {
-		padding: 0 45vw 0 0;
-	}
-
-	.bx-pink .bx-dpink {
+@media (max-width: 800px) {
+	main {
+		min-height: 100vh;
 		height: fit-content;
-		margin: 0 0 0 0;
-	}
-
-	.bx-pink {
-		padding: 5vh 2vw 5vh 2vw;
-	}
-
-	.i-bn {
-		width: 55vw;
 	}
 }
