@@ -34,7 +34,7 @@ require_once('back/projetoCtrl.php');
         </nav>
     </header>
     <main class="row d-flex align-items-center p-4">
-        <div class="col-12 col-md-6 position-relative top-0">
+        <div class="col-12 col-md-6 position-relative top-0 shadow-lg p-2 rounded">
             <h1 class="playwrite-gb-j fs-1 fw-bold">Quem é <?PHP echo $nickname; ?> ?</h1>
             <p class="playwrite-gb-j fs-3 text-wrap p-4 fw-semibold">
                 <?PHP echo $desc; ?>

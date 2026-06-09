@@ -36,7 +36,7 @@ require_once('back/projetoCtrl.php');
 
     <main class="row">
         <div class="col-1"></div>
-        <div class="col-10 bx pt-5 text-center">
+        <div class="col-10 shadow-lg rounded-3 pt-5 mt-3 text-center">
             <h1 class="playwrite-gb-j fs-2">Olá, Seja Bem Vindo ao meu Portifolio</h1>
             <p class="playwrite-gb-j fs-1 fw-bold">Sou <?PHP echo $nome; ?>, mas pode me chamar de
                 <?PHP echo $nickname; ?>

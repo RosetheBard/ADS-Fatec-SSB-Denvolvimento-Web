@@ -24,7 +24,7 @@ require_once('back/projetoCtrl.php');
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap"
         rel="stylesheet">
 
-    <title>Rose-AboutPage</title>
+    <title>Rose-ProjectsPage</title>
 </head>
 
 <body>
@@ -34,9 +34,38 @@ require_once('back/projetoCtrl.php');
         </nav>
     </header>
     <main class="row">
-        <div class="col-12">
-            
+        <div class="col-2"></div>
+        <div class="col-8 d-flex justify-content-center p-5 shadow-lg">
+            <div class="d-flex flex-column">
+                <?php
+                for ($i = 1; $i <= $repeat; $i++) {
+                    $query1 = "SELECT * FROM projetos WHERE ID = '$i'";
+                    $puxa1 = $mysqli->query($query1);
+                    $mostra = $puxa1->fetch_object();
+
+
+                    $project = '<div class="card bc m-4" style="max-width: 540px;"><div class="row g-0"><div class="col-md-4"><img src="img/logo.jpg" class="img-fluid rounded" alt="..."></div><div class="col-md-8"><div class="card-body"><h5 class="card-title">' . $mostra->NOME . '</h5><p class="card-text">' . $mostra->DESCRIPT . '.</p><p class="card-text"><small class="text-body-secondary">' . $mostra->DATAINIT . ' --->  ' . $mostra->DATAFIM . '</small></p></div></div></div></div>'
+                    ;
+                    echo $project;
+
+                }
+                ?>
+            </div>
+
+            <div class="d-flex-inline p-5 text-center">
+
+                <h1 class="playwrite-gb-j mb-5 fw-bold">Meus Projetos</h1>
+
+                <div class="btn-group playwrite-gb-j btn-group-lg" role="group" aria-label="Basic example">
+
+                    <a href="about.php" class="btn btn-outline-dark fs-2">Sobre Mim</a>
+                    <a href="index.php" class="btn btn-outline-dark fs-2">Home</a>
+
+                </div>
+            </div>
         </div>
+        <div class="col-2"></div>
+
     </main>
     <footer class="row">
         <small>Feito por Rosemarry Munhoz</small>
