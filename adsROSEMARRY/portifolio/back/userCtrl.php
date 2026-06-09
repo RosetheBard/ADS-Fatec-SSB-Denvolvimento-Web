@@ -1,5 +1,5 @@
 <?php
-require_once('banco.php');
+require_once('back/banco.php');
 
 $query = "SELECT * FROM user";
 $puxa = $mysqli->query($query);

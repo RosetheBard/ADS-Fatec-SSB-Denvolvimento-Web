@@ -34,9 +34,20 @@ require_once('back/projetoCtrl.php');
         </nav>
     </header>
     <main class="row">
-        <div class="col-2"></div>
-        <div class="col-8 d-flex justify-content-center p-5 shadow-lg">
-            <div class="d-flex flex-column">
+        <div class="col-3"></div>
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center p-2 shadow-lg">
+            <div class="flex-column">
+                <div class="d-flex-inline p-2 text-center">
+
+                    <h1 class="playwrite-gb-j mb-5 fw-bold">Meus Projetos</h1>
+
+                    <div class="btn-group playwrite-gb-j btn-group-lg" role="group" aria-label="Basic example">
+
+                        <a href="about.php" class="btn btn-outline-dark fs-2">Sobre Mim</a>
+                        <a href="index.php" class="btn btn-outline-dark fs-2">Home</a>
+
+                    </div>
+                </div>
                 <?php
                 for ($i = 1; $i <= $repeat; $i++) {
                     $query1 = "SELECT * FROM projetos WHERE ID = '$i'";
@@ -51,20 +62,7 @@ require_once('back/projetoCtrl.php');
                 }
                 ?>
             </div>
-
-            <div class="d-flex-inline p-5 text-center">
-
-                <h1 class="playwrite-gb-j mb-5 fw-bold">Meus Projetos</h1>
-
-                <div class="btn-group playwrite-gb-j btn-group-lg" role="group" aria-label="Basic example">
-
-                    <a href="about.php" class="btn btn-outline-dark fs-2">Sobre Mim</a>
-                    <a href="index.php" class="btn btn-outline-dark fs-2">Home</a>
-
-                </div>
-            </div>
         </div>
-        <div class="col-2"></div>
 
     </main>
     <footer class="row">
